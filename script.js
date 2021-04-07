@@ -13,7 +13,7 @@ var sizes = [12, 20, 48, 56, 72];
 var family = ["cursive", "fantasy", "monospace", "serif", "sans-serif"];
 var colors = ["#ff0000", "#008000", "#0000ff", "#4b0082"]
 
-//i dont know why i did this to myself......... for astrology ig lol
+//all of the code is mine but I got the horoscopes from astrology.com
 //im a cancer btw (aquarius moon, leo rising)
 var aries = ["Aries, the mountain summit is in sight. This week, hard work gets you to the top.",
 "The keyword for this week is opportunity. Aries, it's like the harvest time has come early.",
@@ -106,7 +106,7 @@ chosenHoroscope = sag[randomHoroscope];
 else if (sign == "Capricorn" || sign == "capricorn" || sign == "Cap" || sign == "cap"){
 chosenHoroscope = capricorn[randomHoroscope];
 }
-else if (sign == "Aquarius" || sign == "aquarius"){
+else if (sign == "Aquarius" || sign == "aquarius" || sign == "Aqua" || sign == "aqua"){
 chosenHoroscope = aquarius[randomHoroscope];
 }
 else if (sign == "Pisces" || sign == "pisces"){
