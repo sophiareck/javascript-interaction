@@ -52,10 +52,6 @@ var pisces = ["Pisces, this week, it's good to enjoy the process as you may have
 "Pisces, this week, as you move toward obstacles, they dissolve before your eyes.",
 "Financial success is possible this week. But Pisces, be careful, or you will end up spending the extra you receive."];
 
-var randomHoroscope = Math.floor(Math.random() * 3);
-var randomSize = Math.floor(Math.random() * 5);
-var randomFamilys = Math.floor(Math.random() * 5);
-var randomColor = Math.floor(Math.random() * 4);
 signButton.addEventListener("click", fortune);
 calcButton.addEventListener("click", halfNumber);
 
@@ -66,6 +62,9 @@ console.log("Half of " + number + " is " + number / 2);
 }
 
 function restyle(){
+  var randomSize = Math.floor(Math.random() * 5);
+  var randomFamilys = Math.floor(Math.random() * 5);
+  var randomColor = Math.floor(Math.random() * 4);
 fontSizes = sizes[randomSize];
 fontFamilys = family[randomFamilys];
 fontColor = colors[randomColor];
@@ -75,6 +74,7 @@ horoscopeStyle.style.fontFamily = fontFamilys;
 }
 
 function fortune(){
+  var randomHoroscope = Math.floor(Math.random() * 3);
 sign = document.getElementById('fortune-input').value;
 if (sign == "Aries" || sign == "aries"){
 chosenHoroscope = aries[randomHoroscope];
